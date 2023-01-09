@@ -1,0 +1,8 @@
+{
+  "name": "react-native-template-ts-redux-navigation",
+  "version": "0.0.1",
+  "description": "React Native Template with Typescript, Redux and React Navigation setup",
+  "repository": "git@github.com:BenHurMartins/react-native-template-ts-redux-navigation.git",
+  "author": "Ben Hur Martins <benhur.martins@hotmail.com>",
+  "license": "MIT"
+}
