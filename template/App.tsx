@@ -1,12 +1,17 @@
-import React from 'react';
-import {SafeAreaView, StyleSheet, useColorScheme} from 'react-native';
-import {store} from './src/redux/store';
-import {Provider} from 'react-redux';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import AppNavigator from './src/routes';
+import React, { useEffect } from "react";
+import { SafeAreaView, StyleSheet, useColorScheme } from "react-native";
+import { store } from "./src/redux/store";
+import { Provider } from "react-redux";
+import { Colors } from "react-native/Libraries/NewAppScreen";
+import AppNavigator from "./src/routes";
+import SplashScreen from "react-native-splash-screen";
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+  const isDarkMode = useColorScheme() === "dark";
+
+  useEffect(() => {
+    SplashScreen.hide(); //hides the splash screen on app load.
+  }, []);
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -24,7 +29,7 @@ const App = () => {
 const styles = StyleSheet.create({
   appContainer: {
     flex: 1,
-    width: '100%',
+    width: "100%",
   },
 });
 

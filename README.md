@@ -7,6 +7,7 @@ Template for react native featuring
 - React Navigation (Stacks and Tab settings)
 - React Native Vector Icons
 - Test setup with testing-library
+- Splash Screen
 
 # Using the Template
 
